@@ -1,23 +1,36 @@
 package com.CodingClub.CodeClubZBot.listeners;
 
+import com.CodingClub.CodeClubZBot.QuestionHandler;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
+import java.util.Random;
+
 public class EventListener extends ListenerAdapter {
+
+    private final String slashCommand = "\\";
+
     @Override
     public void onMessageReceived(MessageReceivedEvent event) {
         String message = event.getMessage().getContentRaw().toLowerCase();
-        if (message.contains("bot")) {
-            event.getChannel().sendMessage("yes @" + event.getAuthor().getName()).queue();
+        if (message.contains(slashCommand + "bot")) {
+            event.getChannel().sendMessage("yes " + event.getAuthor().getName()).queue();
         }
 
-//        if (message.contains("teach")) {
-//            event.getChannel().sendMessage("Hey , I appreciate your perspective, but our decision to have a " +
-//                    "rule against racism in the server is aimed at creating a welcoming and inclusive community for " +
-//                    "everyone. We believe in fostering positive interactions and discussions. If you have any concerns " +
-//                    "or suggestions, feel free to share them. Let's work together to maintain a respectful environment " +
-//                    "for all members.").queue();
-//        }
+        if (message.contains(slashCommand + "q")){
+            var randomNumber = new Random().nextInt(20)+1;
+            System.out.println(randomNumber);
+            var question = QuestionHandler.getMultipleChoiceQuestion(randomNumber);
+            event.getChannel().sendMessage(
+                       question.getQuestion()+"\n"+
+                            question.getAnswerA()+"\n"+
+                            question.getAnswerB()+"\n"+
+                            question.getAnswerC()+"\n"+
+                            question.getAnswerD()
+                    ).queue();
+        }
+
+
     }
     
 }
