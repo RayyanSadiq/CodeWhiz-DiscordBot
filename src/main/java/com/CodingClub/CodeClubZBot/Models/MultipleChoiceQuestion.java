@@ -1,4 +1,4 @@
-package com.CodingClub.CodeClubZBot;
+package com.CodingClub.CodeClubZBot.Models;
 
 public class MultipleChoiceQuestion {
 

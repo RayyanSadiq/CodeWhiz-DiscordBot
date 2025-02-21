@@ -5,12 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c9cff77-5c41-4bea-9da9-317a7be90324" name="Changes" comment="Commit 1.1&#10;&#10;expirmental adjustments">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/CodingClub/CodeClubZBot/MultipleChoiceQuestion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/CodingClub/CodeClubZBot/QuestionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/CodingClub/CodeClubZBot/Handlers/GradeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/CodingClub/CodeClubZBot/Models/GradeReport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Grades.example.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/CodingClub/CodeClubZBot/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/CodingClub/CodeClubZBot/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/CodingClub/CodeClubZBot/listeners/EventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/CodingClub/CodeClubZBot/listeners/EventListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/CodingClub/CodeClubZBot/CodeClubZBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/CodingClub/CodeClubZBot/CodeClubZBot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/CodingClub/CodeClubZBot/MultipleChoiceQuestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/CodingClub/CodeClubZBot/Models/MultipleChoiceQuestion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/CodingClub/CodeClubZBot/QuestionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/CodingClub/CodeClubZBot/Handlers/QuestionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/CodingClub/CodeClubZBot/listeners/EventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/CodingClub/CodeClubZBot/EventListeners/EventListener.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,20 +31,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "DragonXdroid"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;DragonXdroid&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/RayyanSadiq/CodeWhiz-DiscordBot.git",
+    "accountId": "62d9dcd6-90d7-40aa-8e63-5adc767ac795"
   }
 }]]></component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="64e0b5ca-5b8e-407b-a914-d5f7bba1dd4b" />
-        <option name="url" value="https://github.com/DragonXdroid/CodeClubZBot.git" />
-      </UrlAndAccount>
-    </option>
-  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -56,10 +58,16 @@
     "OverrideImplement.combined": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/raysa/IdeaProjects/CodeClubZBot"
+    "last_opened_file_path": "C:/Users/raysa/IdeaProjects/CodeWhiz-DiscordBot/src/main/resources",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -73,7 +81,7 @@
       <module name="CodeClubZBot" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.CodingClub.CodeClubZBot.*" />
+          <option name="PATTERN" value="com.CodingClub.CodeClubZBot.Handlers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -86,13 +94,6 @@
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -121,6 +122,9 @@
     </task>
     <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

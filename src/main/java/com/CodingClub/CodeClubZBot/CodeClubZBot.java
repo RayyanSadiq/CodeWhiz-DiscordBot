@@ -1,6 +1,6 @@
 package com.CodingClub.CodeClubZBot;
 
-import com.CodingClub.CodeClubZBot.listeners.EventListener;
+import com.CodingClub.CodeClubZBot.EventListeners.EventListener;
 import io.github.cdimascio.dotenv.Dotenv;
 import net.dv8tion.jda.api.OnlineStatus;
 import net.dv8tion.jda.api.entities.Activity;
@@ -14,6 +14,8 @@ public class CodeClubZBot {
     private final Dotenv config;
     private final ShardManager shardManager;
 
+    public static boolean is_dev_mode = false;
+
     public CodeClubZBot() {
         // Load the config from the .env file.
         config = Dotenv.configure().load();
@@ -22,7 +24,7 @@ public class CodeClubZBot {
         // Create the shard manager.
         DefaultShardManagerBuilder builder = DefaultShardManagerBuilder.createDefault(token);
         builder.setStatus(OnlineStatus.ONLINE);
-        builder.setActivity(Activity.playing("with code"));
+        builder.setActivity(Activity.playing("in " + (is_dev_mode ? "development" : "code")) );
         builder.enableIntents(GatewayIntent.MESSAGE_CONTENT);
 
         // Build the shard manager.

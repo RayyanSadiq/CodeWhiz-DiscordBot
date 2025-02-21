@@ -1,0 +1,6 @@
+discord_username|real_name
+Assignment:Assignment_name:100
+Assignment:Celsius/Fahrenheit Converter:70
+Project:RPG-Text-Based Adventure Game:20
+
+

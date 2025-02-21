@@ -40,3 +40,4 @@ build/
 ### env ###
 .env
 /src/main/resources/QuestionAndAnswers.txt
+/src/main/resources/Grades.txt

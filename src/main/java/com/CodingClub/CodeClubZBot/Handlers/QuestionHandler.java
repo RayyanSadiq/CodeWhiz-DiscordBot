@@ -1,9 +1,9 @@
-package com.CodingClub.CodeClubZBot;
+package com.CodingClub.CodeClubZBot.Handlers;
+
+import com.CodingClub.CodeClubZBot.Models.MultipleChoiceQuestion;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.FileWriter;
-import java.io.PrintWriter;
 import java.util.Scanner;
 
 public class QuestionHandler {
